@@ -18,4 +18,19 @@ docker build -t danncastro/kubenews:v1 .
 
 ~~~bash
 docker push danncastro/kubenews:v1
-~~~~
+~~~
+
+3º Execução aplicação banco de dados Postgress
+
+~~~bash
+kubectl apply -f imersao-devops-cloud-02/kube-news/k8s/database/deployment.yml
+kubectl apply -f imersao-devops-cloud-02/kube-news/k8s/database/service.yml
+~~~
+
+![alt text](/kube-news/image.png)
+
+4º Execução aplicação base
+
+~~~bash
+
+~~~

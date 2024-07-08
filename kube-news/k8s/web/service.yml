@@ -5,7 +5,7 @@ metadata:
 
 spec:
   ports:  
-  - posts: 80
+  - port: 80
     targetPort: 8080
     nodePort: 30808
   type: NodePort
