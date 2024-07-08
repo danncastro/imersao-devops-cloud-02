@@ -5,7 +5,7 @@ metadata:
 
 spec:
   ports:  
-  - posts: 5432
+  - post: 5432
 
   selector:
     app: pkubenews
