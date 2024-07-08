@@ -27,10 +27,14 @@ kubectl apply -f imersao-devops-cloud-02/kube-news/k8s/database/deployment.yml
 kubectl apply -f imersao-devops-cloud-02/kube-news/k8s/database/service.yml
 ~~~
 
-![alt text](/kube-news/image.png)
+![alt text](/kube-news/image_database.png)
 
 4º Execução aplicação base
 
 ~~~bash
-
+kubectl apply -f imersao-devops-cloud-02/kube-news/k8s/web/deployment.yml
+kubectl apply -f imersao-devops-cloud-02/kube-news/k8s/web/service.yml
 ~~~
+
+![alt text](/kube-news/image_servico.png)
+![alt text](/kube-news/image_web.png)
