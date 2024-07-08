@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skubenews
+
+spec:
+  template:
+    metadata:
+      labels:
+        app: skubenews
+    spec:
+      containers:
+      - name: skubenews
+        image: danncastro/kubenews:v1
+        env:
+        - name: ASPNETCORE_HTTP_PORTS
+          value: "8080"
+        - name: ConnectionStrings__DefaultConnection
+          value: "Host=pkubenews;Database=pkubenews;Username=pkubenews;Password=Passw0rd2024!"
+        ports: 
+        - containerPort: 8080
+
+  replicas: 3
+  selector:
+    matchLabels:
+      app: skubenews
